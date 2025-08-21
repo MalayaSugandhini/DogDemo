@@ -18,10 +18,9 @@ A tiny Spring Boot project that demonstrates **Inversion of Control (IoC)**, **D
 - **Singleton** (default): Spring creates **one** instance; every `getBean()` returns that same object.
 - **Prototype**: Spring creates a **new** instance on each `getBean()` call (or injection point).
 
-> If `Trainer` remains a singleton, both dogs share the same trainer.  
-> For separate trainers per dog by default, annotate `Trainer` with `@Scope("prototype")` or create different trainers manually.
+If `Trainer` remains a singleton, both dogs share the same trainer.  
+For separate trainers per dog by default, annotate `Trainer` with `@Scope("prototype")` or create different trainers manually.
 
----
 
 ## Try It Yourself
 
@@ -29,14 +28,12 @@ A tiny Spring Boot project that demonstrates **Inversion of Control (IoC)**, **D
 - Add a REST endpoint (add `spring-boot-starter-web`) to return dog info.
 - Switch to **constructor injection** for `Dog(Trainer trainer)`.
 
----
 
 ## Requirements
 
 - JDK **17+**
 - Maven or the included **Maven Wrapper**
 
----
 
 ## License
 
